@@ -21,27 +21,37 @@
   </head>
   <body>
     <header>
-      <div class="info-restaurante">
-        <div class="logo-area">
-          <img src="./img/espetinho_shalom_logo.jpeg" alt="Logo" class="logo" />
+      <div class="container">
+        <div class="info-restaurante">
+          <div class="logo-area">
+            <img
+              src="./img/espetinho_shalom_logo.jpeg"
+              alt="Logo"
+              class="logo"
+            />
+          </div>
+        </div>
+
+        <div class="categorias">
+          <button class="cat-btn ativo" onclick="filtrar('todos')">
+            Todos
+          </button>
+          <button class="cat-btn" onclick="filtrar('entradas')">
+            Entradas
+          </button>
+          <button class="cat-btn" onclick="filtrar('espetinhos')">
+            Espetinhos
+          </button>
+          <button class="cat-btn" onclick="filtrar('guarnicoes')">
+            Guarnições
+          </button>
+          <button class="cat-btn" onclick="filtrar('bebidas')">Bebidas</button>
         </div>
       </div>
     </header>
 
-    <nav class="categorias">
-      <button class="cat-btn ativo" onclick="filtrar('todos')">Todos</button>
-      <button class="cat-btn" onclick="filtrar('entradas')">Entradas</button>
-      <button class="cat-btn" onclick="filtrar('espetinhos')">
-        Espetinhos
-      </button>
-      <button class="cat-btn" onclick="filtrar('guarnicoes')">
-        Guarnições
-      </button>
-      <button class="cat-btn" onclick="filtrar('bebidas')">Bebidas</button>
-    </nav>
-
     <main class="cardapio">
-      <h2 class="titulo-categoria">Entradas</h2>
+      <h2 class="titulo-categoria" data-cat="entradas">Entradas</h2>
 
       <div class="item-card" data-cat="entradas">
         <div class="info-item">
@@ -141,7 +151,7 @@
         </div>
       </div>
 
-      <h2 class="titulo-categoria">Espetinhos</h2>
+      <h2 class="titulo-categoria" data-cat="espetinhos">Espetinhos</h2>
 
       <div class="item-card" data-cat="espetinhos">
         <div class="info-item">
@@ -364,7 +374,7 @@
         </div>
       </div>
 
-      <h2 class="titulo-categoria">Guarnições</h2>
+      <h2 class="titulo-categoria" data-cat="guarnicoes">Guarnições</h2>
 
       <div class="item-card" data-cat="guarnicoes">
         <div class="info-item">
@@ -470,7 +480,7 @@
         </div>
       </div>
 
-      <div class="item-card" data-cat="espetinhos">
+      <div class="item-card" data-cat="guarnicoes">
         <div class="info-item">
           <h3>Feijão Verde P</h3>
           <span class="preco">R$ 12,00</span>
@@ -483,7 +493,7 @@
         </div>
       </div>
 
-      <div class="item-card" data-cat="espetinhos">
+      <div class="item-card" data-cat="guarnicoes">
         <div class="info-item">
           <h3>Feijão Verde G</h3>
           <span class="preco">R$ 18,00</span>
@@ -496,7 +506,7 @@
         </div>
       </div>
 
-      <h2 class="titulo-categoria">Bebidas</h2>
+      <h2 class="titulo-categoria" data-cat="bebidas">Bebidas</h2>
 
       <div class="item-card" data-cat="bebidas">
         <div class="info-item">

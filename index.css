@@ -18,16 +18,28 @@ body {
   padding-bottom: 80px; /* Espaço para o carrinho flutuante */
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-light);
   padding-bottom: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-area {
@@ -76,7 +88,6 @@ h1 {
   overflow-x: auto; /* Rolagem horizontal */
   white-space: nowrap;
   scrollbar-width: none; /* Esconde barra de rolagem no Firefox */
-  justify-content: center;
 }
 
 .categorias::-webkit-scrollbar {
@@ -107,6 +118,7 @@ h1 {
 }
 
 .titulo-categoria {
+  text-align: center;
   font-size: 1.1rem;
   color: var(--text-dark);
   margin: 20px 0 10px 0;
