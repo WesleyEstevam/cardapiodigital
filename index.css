@@ -120,6 +120,33 @@ h1 {
   border-color: var(--primary-color);
 }
 
+.instagram-area {
+  margin-bottom: 10px;
+}
+
+.instagram-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  padding: 8px 16px;
+  border-radius: 20px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* CARDÁPIO */
 .cardapio {
   padding: 0 20px;
